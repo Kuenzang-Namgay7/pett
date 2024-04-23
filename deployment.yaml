@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: sandeep-deploy
+    app: knamgay-deploy
   name: sandeep-deploy
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: sandeep-deploy
+      app: knamgay-deploy
   template:
     metadata:
       labels:
-        app: sandeep-deploy
+        app: knamgay-deploy
     spec:
       containers:
-      - image: cloudsihmar/takin:latest
+      - image: Kuenzang-Namgay7/takin:latest
         name: pet
